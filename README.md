@@ -34,3 +34,7 @@ frontille kun lyöntejä tapahtuu. Pelin päättyessä ilmoitetaan voittaja ja l
 
 Taistelu on visualisoitu huikeilla grafiikoilla ja valinnaisesti lokinäkymällä. Huomatkaa erityisesti mahtava parallax-toteutus,
 CSS-animaatiot ja viimeistelty layout.
+
+Ainoa rönsyily spekseihin verrattuna on se, että lyönneillä on 10 % mahdollisuus olla kriittisiä, jolloin hyökkääjän hyökkäys lasketaan tuplana ennen kuin siitä vähennetään puolustus.
+
+Testejähän ei sitten ole (not proud tho, mutta nää on näitä) :)
