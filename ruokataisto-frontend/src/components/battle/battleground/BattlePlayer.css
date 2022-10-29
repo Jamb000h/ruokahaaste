@@ -1,0 +1,11 @@
+.battleground-player {
+  margin-top: 5vh;
+  height: 50%;
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  justify-self: center;
+  position: relative;
+}

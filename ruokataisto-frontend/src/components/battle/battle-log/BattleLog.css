@@ -1,0 +1,24 @@
+.battle-log {
+  height: 500px;
+  max-height: 90vh;
+  width: 500px;
+  max-width: 90vw;
+  overflow-y: auto;
+  background-color: white;
+  padding: 5px;
+  position: relative;
+  line-height: 2rem;
+  box-shadow: 0px 0px 10px 5px lightblue;
+}
+
+.log-entry span {
+  font-weight: bold;
+}
+
+.log-entry .damage {
+  color: red;
+}
+
+.log-entry .hp {
+  color: green;
+}

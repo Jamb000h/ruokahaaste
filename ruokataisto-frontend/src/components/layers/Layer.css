@@ -1,0 +1,49 @@
+.layer.layer--not-interactive {
+  pointer-events: none;
+}
+
+.layer.layer--parallax {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110vh;
+  width: 110vw;
+  left: -5vw;
+  top: -5vh;
+}
+
+.layer.layer--ui {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.layer.layer--ui-no-bg {
+  background-color: transparent;
+}
+
+.layer.layer--ui.layer--not-interactive * {
+  pointer-events: auto;
+}
+
+.layer .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.layer.layer--parallax .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh 10vw;
+}

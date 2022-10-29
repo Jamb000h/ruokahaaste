@@ -1,0 +1,11 @@
+.battle-log-button {
+  position: absolute;
+  top: 5vh;
+  right: 5vw;
+  border: 2px solid blue;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}

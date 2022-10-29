@@ -1,0 +1,112 @@
+.battleground {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.battle-view {
+  position: relative;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 10px;
+}
+
+.battleground .players {
+  height: 100%;
+  width: 100%;
+  padding: 10px 0 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.battleground .players .player {
+  width: 80%;
+  height: 80%;
+  padding: 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.battleground .players .player.player--right {
+  align-items: flex-start;
+}
+
+.player .stat-bar {
+  width: 100%;
+}
+
+.player .name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.player .attack-bar-wrapper,
+.player .stat-bar {
+  transform: skew(20deg);
+}
+
+.player.player--right .attack-bar-wrapper,
+.player.player--right .stat-bar {
+  transform: skew(-20deg);
+}
+
+.player .attack-bar-wrapper {
+  margin-right: -8px;
+}
+
+.player.player--right .attack-bar-wrapper {
+  margin-left: -8px;
+}
+
+.hitbox {
+  font-size: 3rem;
+  color: darkred;
+  font-weight: bold;
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
+
+.hitbox .hit {
+  position: absolute;
+  text-align: center;
+  height: 50%;
+  top: 25%;
+  width: 100%;
+  animation-name: hide;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+  opacity: 0;
+  text-shadow: white 2px 2px 1px;
+  background-image: url("../../../images/isku.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(5px 0 0 white) drop-shadow(0 5px 0 white)
+    drop-shadow(-5px 0 0 white) drop-shadow(0 -5px 0 white);
+}
+
+.hit.crit {
+  animation-duration: 3s;
+  filter: drop-shadow(5px 0 0 black) drop-shadow(0 5px 0 black)
+    drop-shadow(-5px 0 0 black) drop-shadow(0 -5px 0 black);
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

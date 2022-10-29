@@ -1,0 +1,37 @@
+.attack-bar-wrapper {
+  width: 100px;
+  height: 10px;
+  background-color: lightgrey;
+  border: 1px solid black;
+  margin-top: 0.5rem;
+}
+
+.attack-bar {
+  height: 100%;
+  width: 100%;
+}
+
+.attack-bar-wrapper--right .attack-bar {
+  transform: rotate(180deg);
+}
+
+.attack-bar-fill {
+  height: 100%;
+  width: 0;
+  background-color: blue;
+}
+
+.attack-bar-fill-animate {
+  animation-timing-function: linear;
+  animation-name: AttackBar;
+  animation-iteration-count: 1;
+}
+
+@keyframes AttackBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+.App {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0;
+}
+
+.ground {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.rock {
+  position: absolute;
+  left: 500px;
+  bottom: 0;
+  height: 100%;
+  width: 25%;
+  background: url("./images/kivi.png") no-repeat;
+  background-size: contain;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(-10px 20px 20px #222);
+}
+
+.rock--left {
+  left: 10%;
+  bottom: 10%;
+}
+
+.rock--center {
+  left: 50%;
+  bottom: 20%;
+}
+
+.rock--right {
+  left: 80%;
+  bottom: 30%;
+}
+
+.rock--small {
+  height: 80%;
+  transform: translate(130%, -50%);
+}
+
+.tree {
+  position: absolute;
+  left: 500px;
+  bottom: 0;
+  height: 50%;
+  width: 15%;
+  background: url("./images/puu.png") no-repeat;
+  background-size: contain;
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(-10px 20px 20px #222);
+  filter: blur(3px);
+}
+
+.tree--left {
+  left: 10%;
+  top: 20%;
+}
+
+.tree--center {
+  left: 50%;
+  top: 15%;
+}
+
+.tree--right {
+  left: 80%;
+  top: 10%;
+}
+
+.tomaatti {
+  background-image: url("./images/tomaatti.png");
+}
+
+.sipuli {
+  background-image: url("./images/sipuli.png");
+}
+
+.porkkana {
+  background-image: url("./images/porkkana.png");
+}
+
+.paprika {
+  background-image: url("./images/paprika.png");
+}
+
+.omena {
+  background-image: url("./images/omena.png");
+}
+
+.munakoiso {
+  background-image: url("./images/munakoiso.png");
+}
+
+.kurkku {
+  background-image: url("./images/kurkku.png");
+}
+
+.banaani {
+  background-image: url("./images/banaani.png");
+}
+
+.winner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.winner h2 {
+  font-size: 4rem;
+  color: green;
+  text-align: center;
+}
