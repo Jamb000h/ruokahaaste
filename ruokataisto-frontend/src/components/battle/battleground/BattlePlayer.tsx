@@ -32,7 +32,11 @@ export const BattlePlayer = (props: IProps) => {
 
   return (
     <div className={`player${orientationClassName}`}>
-      <StatBar fillAmount={remainingHpPercentage(player)} fillColor="red" />
+      <StatBar
+        fillAmount={remainingHpPercentage(player)}
+        fillColor="red"
+        orientation={props.orientation}
+      />
       <AttackBar
         attackSpeed={player.attackSpeed / 1000}
         orientation={props.orientation}

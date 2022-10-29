@@ -71,7 +71,6 @@ export class Game {
     const attackDamage = isCritical ? attacker.attack * 2 : attacker.attack;
     const defence = target.defence;
     const damage = Math.max(Number((attackDamage - defence).toFixed(1)), 0);
-    console.log('ad', attackDamage, 'def', defence, 'dmg', damage);
     target.takeDamage(damage);
 
     !!this._eventListener &&

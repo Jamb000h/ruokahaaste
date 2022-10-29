@@ -21,7 +21,7 @@ Toisessa terminaalissa navigoi ruokataisto-frontendiin. Asenna riippuvuudet `npm
 - FE: React
 - BE: NestJS
 
-Devattu ja testattu Win10 + Firefox + Chrome.
+Devattu ja testattu Win10 + Node 16.17 + Firefox + Chrome.
 
 ## Kuvaus
 
